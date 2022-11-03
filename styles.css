@@ -1,12 +1,12 @@
-:colours {
-    --aqua: #00ffff;
+:root {
+    --sticky-top-colour: #00ffff;
 }
 .sticky-top {
-    background-color: var(--aqua);
+    background-color: var(--sticky-top-colour);
 }
 
 .col1 {
-    background-color:var(--aqua);
+    background-color:var(--sticky-top-colour);
 }
 
 .col {
@@ -14,5 +14,5 @@
 }
 
 .menu-button{
-    background-color: var(--aqua);
+    background-color: var(--sticky-top-colour);
 }
