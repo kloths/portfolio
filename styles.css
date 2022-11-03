@@ -1,7 +1,18 @@
+:colours {
+    --aqua: #00ffff;
+}
 .sticky-top {
-    background-color:aqua;
+    background-color: var(--aqua);
+}
+
+.col1 {
+    background-color:var(--aqua);
 }
 
 .col {
     text-align:center;
+}
+
+.menu-button{
+    background-color: var(--aqua);
 }
