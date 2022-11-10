@@ -4,10 +4,14 @@
 }
 
 body {
-    background-image: url("https://digitalsynopsis.com/wp-content/uploads/2017/02/beautiful-color-gradients-backgrounds-010-winter-neva.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: rgb(166 202 233);
+    background: hsla(244, 41%, 8%, 1);
+    background: linear-gradient(0deg, hsla(244, 41%, 8%, 1) 0%, hsla(229, 61%, 64%, 1) 60%);
+    background: -moz-linear-gradient(0deg, hsla(244, 41%, 8%, 1) 0%, hsla(229, 61%, 64%, 1) 60%);
+    background: -webkit-linear-gradient(0deg, hsla(244, 41%, 8%, 1) 0%, hsla(229, 61%, 64%, 1) 60%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#0D0C1D", endColorstr="#6A7FDB", GradientType=1 );
+}
+
+.body {
     padding: 0 20%;
 }
 
@@ -20,12 +24,17 @@ p {
 .main-header {
     color: white;
     padding-top: 15px;
-    padding-bottom: 100px;
+    padding-left: 5px;
+    padding-right: 15px;
+    margin-left: 20%;
+    height: auto;
 }
 
 .header {
     color: white;
     padding-bottom: 35px;
+    margin-left: 20%;
+    /* text-decoration:underline rgb(224, 141, 172); */
 }
 
 .sub__header {
@@ -39,7 +48,7 @@ p {
 }
 
 .top p {
-    color: gray;
+    color: rgb(199, 199, 199);
     padding-bottom: 100px;
     font-weight: 500;
     height: auto;
@@ -57,7 +66,7 @@ p {
 }
 
 .row {
-    padding: 2.5% 7.5%;
+    padding: 2.5% 17.5%;
 }
 
 .col {
@@ -80,33 +89,140 @@ p {
 }
 
 .button-primary {
-    background-color:rgb(166 202 233);
+    background-color:rgb(224, 141, 172);
     color: white;
     text-decoration: none;
     border-radius: 5px;
     padding: 5px 10px;
-    border: 2px solid rgb(166 202 233);
+    border: 2px solid rgb(224, 141, 172);
     font-weight: 500;
 }
 
 .button-primary:hover {
-    background-color: rgb(148, 182, 211);
-    border-color: rgb(148, 182, 211);
+    background-color: rgb(212, 134, 163);
+    border-color: rgb(212, 134, 163);
     color: white;
 }
 
 .button-primary:active {
-    background-color: rgb(134, 164, 190);
-    border-color: rgb(134, 164, 190);
+    background-color: rgb(200, 126, 153);
+    border-color: rgb(200, 126, 153);
 }
 
 .card-text {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 600;
     margin-bottom: 5px;
+    color: white;
 }
 
 .card-title {
     font-weight: bolder;
-    color: rgba(166, 202, 233, 0.85);
+    color: rgb(106, 127, 219);
+}
+
+.sticky-top {
+    display: flex;
+    flex-wrap: nowrap;
+    height: 50px;
+    width: auto;
+    background-color: rgba(22, 27, 51, 0.8);
+    padding: 0px;
+}
+
+.sticky-top ul {
+    display: block;
+    list-style-type: none;
+    text-align: center;
+}
+
+.sticky-top .dropdown .dropdown-menu {
+    background-color: rgb(22, 27, 51);
+}
+
+.sticky-top .link {
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0);
+    border: 0px;
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+    height: 50px;
+
+}
+
+.sticky-top .dropdown .link:hover {
+    background-color:rgba(22, 27, 51, 0.8); 
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: grid;
+    position: absolute;
+    left: 0;
+    top: calc(100% + .25rem);
+    padding: .75rem;
+    border-radius: .25rem;
+    box-shadow: 0 2.5px 5px 0 rgba(0, 0, 0, .1);
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-10px);
+    transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
+}
+
+.dropdown li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+
+.dropdown > .link:focus + .dropdown-menu {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+
+.dropdown-menu li {
+    padding: .1rem;
+}
+
+.dropdown-menu li:hover {
+    background-color: rgb(20, 24, 46); 
+}
+
+footer {
+    background-color:rgb(22, 27, 51);
+    height: 250px;
+    width: auto;
+    box-shadow: 0 0 12.5px 0 rgba(224, 141, 172, 0.8);
+}
+
+footer h3 {
+    color: rgb(224, 141, 172);
+}
+
+footer .row {
+    height: 250px;
+}
+
+footer .col {
+    display: grid;
+    margin: 0px;
+    padding: 0px;
+}
+
+.col .ion-icon {
+    color: rgb(224, 141, 172);
+}
+
+.col a {
+    color: white;
+    text-decoration: none;
+}
+
+.col a:hover {
+    color: white;
 }
