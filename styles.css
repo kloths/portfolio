@@ -4,11 +4,14 @@
 }
 
 body {
-    background: hsla(244, 41%, 8%, 1);
+    /* background: hsla(244, 41%, 8%, 1);
     background: linear-gradient(0deg, hsla(244, 41%, 8%, 1) 0%, hsla(229, 61%, 64%, 1) 60%);
     background: -moz-linear-gradient(0deg, hsla(244, 41%, 8%, 1) 0%, hsla(229, 61%, 64%, 1) 60%);
     background: -webkit-linear-gradient(0deg, hsla(244, 41%, 8%, 1) 0%, hsla(229, 61%, 64%, 1) 60%);
-    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#0D0C1D", endColorstr="#6A7FDB", GradientType=1 );
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#0D0C1D", endColorstr="#6A7FDB", GradientType=1 ); */
+    background-image: url("gradient.png");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .body {
