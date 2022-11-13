@@ -1,4 +1,13 @@
 :root {
+    --primary-clr: rgb(106, 127, 219);
+    --secondary-clr: rgb(22, 27, 51);
+    --accent-clr:rgb(224, 141, 172);
+    --accent-bs-clr: rgb(224, 141, 172, 0.8);
+    --card-btn-hover-clr: rgb(212, 134, 163);
+    --card-btn-active-clr: rgb(200, 126, 153);
+    --link-hover-clr: rgba(22, 27, 51, 0.8);
+    --sticky-top-clr: rgba(22, 27, 51, 0.95);
+    --dd-li-hover-clr: rgb(20, 24, 46);
     --card__image__height: 11.916rem;
     --card__body__height: 14.5rem;
     --ff-roboto: "Roboto", sans-serif;
@@ -84,24 +93,24 @@ p {
 }
 
 .button-primary {
-    background-color:rgb(224, 141, 172);
+    background-color: var(--accent-clr);
     color: white;
     text-decoration: none;
     border-radius: 0.313rem;
     padding: 0.313rem 0.625rem;
-    border: 0.125rem solid rgb(224, 141, 172);
+    border: 0.125rem solid var(--accent-clr);
     font-weight: var(--fw-400);
 }
 
 .button-primary:hover {
-    background-color: rgb(212, 134, 163);
-    border-color: rgb(212, 134, 163);
+    background-color: var(--card-btn-hover-clr);
+    border-color: var(--card-btn-hover-clr);
     color: white;
 }
 
 .button-primary:active {
-    background-color: rgb(200, 126, 153);
-    border-color: rgb(200, 126, 153);
+    background-color: var(--card-btn-active-clr);
+    border-color: var(--card-btn-active-clr);
 }
 
 .card-text {
@@ -112,7 +121,7 @@ p {
 
 .card-title {
     font-weight: var(--fw-700);
-    color: rgb(106, 127, 219);
+    color: var(--primary-clr);
 }
 
 .sticky-top {
@@ -120,9 +129,8 @@ p {
     flex-wrap: nowrap;
     height: 3.125rem;
     width: auto;
-    background-color: rgba(22, 27, 51, 0.95);
+    background-color: var(--sticky-top-clr);
     align-items: center;
-    /* overflow: hidden; */
 }
 
 .sticky-top ul {
@@ -132,7 +140,7 @@ p {
 }
 
 .sticky-top .dropdown .dropdown-menu {
-    background-color: rgb(22, 27, 51);
+    background-color: var(--secondary-clr);
 }
 
 .sticky-top .link {
@@ -142,12 +150,11 @@ p {
     font-size: 1rem;
     font-weight: var(--fw-400);
     height: 3.125rem;
-    /* margin-inline-end: auto; */
 }
 
 .sticky-top .dropdown .link:hover {
-    background-color:rgba(22, 27, 51, 0.8); 
-    box-shadow: 0 .156rem 0 0 rgba(224, 141, 172, 0.8);
+    background-color: var(--link-hover-clr);
+    box-shadow: 0 .156rem 0 0 var(--accent-bs-clr);
 }
 
 .dropdown {
@@ -161,7 +168,7 @@ p {
     top: calc(100% + .25rem);
     padding: .75rem;
     border-radius: .25rem;
-    box-shadow: 0 0.156rem 0.313rem 0 rgba(0, 0, 0, .1);
+    box-shadow: 0 0.156rem 0.313rem 0 rgba(0, 0, 0, 0.25);
     opacity: 0;
     pointer-events: none;
     transform: translateY(-10px);
@@ -181,27 +188,27 @@ p {
 }
 
 .dropdown-menu li {
-    padding: .1rem;
+    padding: .5rem;
 }
 
 .dropdown-menu li:hover {
-    background-color: rgb(20, 24, 46);
+    background-color: var(--dd-li-hover-clr);
 }
 
 footer {
-    background-color:rgb(22, 27, 51);
+    background-color: var(--secondary-clr);
     height: 15.625rem;
-    box-shadow: 0 0 0.781rem 0 rgba(224, 141, 172, 0.8);
+    box-shadow: 0 0 0.781rem 0 var(--accent-clr, 0.8);
     overflow: hidden;
 }
 
 footer h3 {
-    color: rgb(224, 141, 172);
+    color: var(--accent-clr);
     padding: 1rem 0;
 }
 
 .even-columns .ion-icon {
-    color: rgb(224, 141, 172);
+    color: var(--accent-clr);
 }
 
 .even-columns a {
