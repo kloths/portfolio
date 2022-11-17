@@ -1,0 +1,122 @@
+:root {
+    --ff-primary: 'Montserrat', sans-serif;
+    --clr-primary-200: #FFEECF;
+    --clr-primary-400: #2B59C3;
+
+    --clr-neutral-100: #FFF;
+    --clr-neutral-900: #253C78;
+}
+
+body {
+    font-family: var(--ff-primary);
+    line-height: 1.7rem;
+    margin: 0;
+}
+
+header {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: auto;
+    padding-bottom: 2rem;
+}
+
+header p {
+    box-shadow: -0.15rem 0 0 0 rgba(0, 0, 0, 0.1);
+    padding-left: 3rem;
+}
+
+header > * {
+    padding-inline: 3rem;
+}
+
+.header {
+    margin-top: 3.5rem;
+    font-size: 3rem;
+    text-align: end;
+}
+
+header p {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+p {
+    font-size: 1.05rem;
+    font-weight: 200;
+}
+
+.sub-header {
+    text-align: center;
+    font-size: 2rem;
+    box-shadow: 0 -0.15rem 0 0 rgba(0, 0, 0, 0.1);
+    padding-top: 1.5rem;
+    margin: 0;
+}
+
+.container {
+    margin-inline: auto;
+    width: min(90%, 70.5rem);
+}
+
+.container h2 {
+    padding: 0;
+    margin: 0;
+}
+
+.container p, .container h2 {
+    text-align: center;
+    padding: 0 1.5rem;
+}
+
+.card {
+    min-width: 10rem;
+    background-color: rgba(128, 128, 128, 0.1);
+    padding: 0.5rem 0.5rem;
+    border-radius: 0.313rem;
+    box-shadow: 0 0 0.313rem 0 rgba(0, 0, 0, 0.1);
+    margin: 2rem 2.5rem;
+    align-items: center;
+    min-height: 10rem;
+}
+
+ul {
+    list-style-type: none;
+    padding-inline: 2rem;
+    text-align: center;
+}
+
+.even-columns {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: auto;
+    justify-content: center;
+}
+
+.bg-light {background-color: var(--clr-primary-200);}
+
+.bg-primary {
+    color: var(--clr-neutral-100);
+    background-color: var(--clr-primary-400);
+}
+
+.bg-dark {
+    color: var(--clr-neutral-100);
+    background-color: var(--clr-neutral-900);
+}
+
+.bg-neutral {
+    background-color: var(--clr-neutral-100);
+}
+
+.bg-primary h1, .bg-dark h1,
+.bg-primary h2, .bg-dark h2 {
+    color: var(--clr-primary-200);
+}
+
+a {
+    color: var(--clr-primary-200);
+}
+
+.primary-400 {
+    color: var(--clr-primary-400);
+}
