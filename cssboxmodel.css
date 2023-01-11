@@ -1,0 +1,77 @@
+:root {
+    --ff-roboto: "Roboto", sans-serif;
+    --fw-100: 100;
+    --fw-300: 300;
+    --fw-400: 400;
+    --fw-700: 700;
+}
+
+body {
+    line-height: 1.5;
+    font-family: var(--ff-roboto);
+    background: pink;
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+p {
+    font-weight: var(--fw-300);
+}
+
+.heading {
+    background: rgb(255, 157, 174);
+    margin-top: 0;
+    padding-top: 10px;
+}
+
+.outside p {
+    margin: 0 150px;
+}
+
+.outside {
+    color: white;
+}
+
+.center {
+    text-align: center;
+}
+
+.container {
+    padding: 30px;
+    background: rgb(253, 205, 213);
+}
+
+.box-model-1 {
+    justify-content: center;
+    align-items: center;
+    background-color: yellow;
+    width: 300px;
+    border: 15px solid orange;
+    padding: 50px;
+    margin: 5px auto;
+}
+
+.box-model-2 {
+    justify-content: center;
+    align-items: center;
+    background-color: yellow;
+    width: 300px;
+    height: 221.5px;
+    padding: 50px;
+    margin: 5px auto;
+    border: 30px solid red;
+    background-color: orange;
+    width: 300px;
+    border-radius: 15px;
+    position: relative;
+}
+
+.box-model-2 img {
+    width: 300px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}

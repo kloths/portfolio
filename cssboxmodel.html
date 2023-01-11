@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cssboxmodel.css">
+    <title>khuwtie | CSS Box Model</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1 class="center outside heading">CSS Box Model</h1>
+    <p class="center outside">The CSS Box model is a box that wraps around every HTML element. It is made up of a margin, border, padding and the content. The margin creates space around elements, the border creates a border around the padding and content, the padding creates space around the element's content and inside borders, and the content is where images and text will show.</p>
+    <div class="container">
+        <h1 class="center outside">Demonstrations</h1>
+        <div class="box-model-1">
+            <p class="center">This text is the content of the box. It has 50px of padding, a border of 15px, and a block margin (up and down) of 30 pixels and an inline margin (left and right) of auto which centers the box model depending on the width of the display the website is on, therefore at different sizes the values will be different.</p>
+        </div>
+        <br>
+        <br>
+        <div class="box-model-2">
+            <img src="yellow_rectangle.png" alt="Content" srcset="">
+            <p class="center"></p>
+        </div>
+    </div>
+    <p class="center outside">This second box model has rounded corners which is set by a border radius property. Since this box uses an image as the content, I am able to clearly show the padding around the image which is shown from the orange color around the content. It has 50 pixels of padding, a border of 30 pixels and a block margin (up and down) of 30 pixels and an inline margine (left and right) of auto which centers the box model depending on the width of the display the website is on, therefore at different sizes the values will be different.</p>
+    <br>
+    <p class="center outside">When you set the width and height properties of an element using CSS, it isn't as simple as just finding the height and width of the content; you must also add margins, borders and padding into the calculation. Although the width of the second css box model is 380px (padding, border, content included). The total width of the second css box model would be 100% of the display's width.</p>
+</body>
+</html>
